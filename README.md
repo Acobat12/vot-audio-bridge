@@ -21,3 +21,7 @@ A small Vercel/Next.js app that uploads **already valid MP4 audio files** direct
 - `BLOB_READ_WRITE_TOKEN` must remain server-side; never embed it in browser JavaScript.
 
 Docs: https://vercel.com/docs/vercel-blob/client-upload
+
+## Diagnostic build
+
+The upload form now reports upload stage, transferred bytes, rate, elapsed time, and inactivity warnings after 30 seconds. It offers cancellation via AbortController and displays a copyable error summary. This helps diagnose multipart completion stalls but does not itself guarantee resolution of network or SDK failures. Do not share HAR request bodies, authorization headers, or UPLOAD_SECRET.
