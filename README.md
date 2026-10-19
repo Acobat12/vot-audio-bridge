@@ -11,6 +11,9 @@ A small Vercel/Next.js app that uploads **already valid MP4 audio files** direct
 5. Redeploy if necessary. Open your project's `.vercel.app` URL, choose a valid `.mp4`, enter the secret, and click Upload.
 6. Copy the resulting `*.public.blob.vercel-storage.com` URL.
 
+   <img width="670" height="504" alt="изображение" src="https://github.com/user-attachments/assets/f8bdae43-9ec4-49d7-962a-dbe6a56abbe7" />
+
+
 ## Important limits and behavior
 
 - This project does **not** download Bilibili audio or convert `.m4s` to `.mp4`. Use a valid MP4 file, not a renamed fragmented DASH stream. Browser download/remux integration with VOT is a separate step.
